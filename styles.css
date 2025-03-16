@@ -1,0 +1,93 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: rgb(10, 56, 10);
+}
+/* Style for the Header */
+/* Transparent Floating Header */
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    background: white; /* More transparent */
+    padding: 15px 30px;
+    border-radius: 10px;
+    z-index: 100;
+    backdrop-filter: blur(5px); /* Soft blur effect */
+}
+
+/* More Subtle Text Effect */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg,#04ff3e, #015123, #04ff3e); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(19, 7, 7, 0.5);
+    animation: glow 2s infinite alternate;
+}
+
+/* Move the First Section Down */
+.forest {
+    padding-top: 100px; /* Ensures header doesn't block the first section */
+}
+
+
+/* Glow Animation */
+@keyframes glow {
+    0% { text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5); }
+    100% { text-shadow: 2px 2px 20px rgba(255, 255, 255, 1); }
+}
+
+
+/* Full-screen sections */
+.parallax {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* Style for content box inside each section */
+.content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5); /* Adds contrast */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Location name styling */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Quote styling */
+.quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Background images */
+.forest { background-image: url('assets/forest.jpg'); }
+.mountains { background-image: url('assets/mountains.jpg'); }
+.desert { background-image: url('assets/desert.jpg'); }
+.ocean { background-image: url('assets/oceans.jpg'); }
+.sky { background-image: url('assets/sky.jpg'); }
