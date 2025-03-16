@@ -6,6 +6,9 @@ Nature & Travel Inspired – Transitions through different landscapes
 Inspirational Quotes – Each section has a motivational travel quote
 Fully Responsive – Works on mobile, tablet, and desktop
 
+Check out for live demo! 
+HERE   https://gurupism003.github.io/parallexscrollingwebsite/
+
 Folder Structure
 /parallax-website
 │── index.html        # Main HTML file
